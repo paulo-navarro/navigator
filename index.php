@@ -59,9 +59,9 @@ function base64url_decode($data) {
 	<head>
 		<title>Navigator</title>
 		<meta charset="UTF-8">
-		<script src="/js/jquery-3.1.0.min.js"></script>
-		<script src="/js/navigator.js"></script>
-		<link rel="stylesheet" type="text/css" href="/css/navigator.css">
+		<script src="./js/jquery-3.1.0.min.js"></script>
+		<script src="./js/navigator.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/navigator.css">
 	</head>
 	<body>
 		<h1><?=$title?></h1>

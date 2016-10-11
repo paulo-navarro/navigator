@@ -1,0 +1,165 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	margin: 30px auto;
+	padding: 0 20px;
+	font-family: Verdana, Arial;
+	font-size: 14px;
+}
+h1{
+	text-align: center;
+	font-size: 1.5em;
+}
+.list>div, .list>a{
+	display:block;
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 80%;
+}
+.list>div{
+	padding:10px 0 10px 0;
+	font-size: 0em;
+}
+.list>a{
+	padding:15px 0 15px 60px;
+}
+.list>div:hover, .list>a:hover{
+	background-color: #f5f5f5;
+}
+.list>div div{
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0 0 0 60px;
+}
+.list>div div:nth-child(1){
+	width: calc(100% - 100px);
+}
+.list>div div:nth-child(2){
+	width: 100px;
+	text-align: right;
+}
+.folder{
+	background-image: url("./icons/folder.svg");
+}
+.image{
+	background-image: url("./icons/image2.svg");
+}
+.video{
+	background-image: url("./icons/video.svg");
+}
+.file{
+	background-image: url("./icons/file2.svg");
+}
+.ico{
+	display: inline-block;
+	position: relative;
+	height: 30px;
+	width: 30px;
+	margin: 0 10px 0 0;
+	clear: both;
+}
+.download{
+	background-image: url("./icons/download.svg");
+}
+.upload{
+	background-image: url("./icons/upload.svg");
+}
+#popShow{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+#popShow div:nth-child(1){
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+#popShow img, #popShow video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 95%;
+    max-height: 95%;
+    transform: translate(-50%, -50%);
+}
+#download{
+	display: none;
+}
+#fecharPopShow{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    padding: 3px;
+    color: #fff;
+    font-family: Arial, Verdana;
+    font-size: 1em;
+    text-align: center;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#breadcrumbs{
+	margin: 10px 0;
+	font-size: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+}
+#breadcrumbs a,#breadcrumbs span{
+	display: inline-block;
+	padding: 10px 10px;
+	margin: 0;
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+	border-style: none solid none none;
+	border-width: 1px;
+	border-color: #ccc;
+	cursor: pointer;
+}
+#breadcrumbs a:hover,#breadcrumbs span,#breadcrumbs span:hover{
+	background-color: #f5f5f5;
+}
+@media screen and (max-device-width: 1000px) {
+	body{
+		font-size: 30px;
+	}
+	#breadcrumbs a,#breadcrumbs span{
+		font-size: 30px;
+	}
+	.list>div{
+		padding:30px 0;
+		background-size: auto 65%;
+	}
+	.list>a{
+		padding:30px 0 30px 80px;
+		background-size: auto 70%;
+	}
+	.list>div div{
+		padding: 0 0 0 90px;
+		font-size: 30px;
+	}
+	.ico{
+		height: 60px;
+		width: 60px;
+	}
+}
